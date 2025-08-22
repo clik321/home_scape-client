@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navLinks a:hover,
+.active {
+  color: #1abc9c;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+/* תפריט רספונסיבי */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+}
+.NavLinks {
+  display: flex;
+  gap: 20px; 
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px; 
+}
+
+.link:hover {
+  color: blue;
+}

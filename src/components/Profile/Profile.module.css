@@ -1,0 +1,18 @@
+
+.profile {
+  padding: 1.5rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.details p {
+  margin: 0.5rem 0;
+  color: #555;
+}

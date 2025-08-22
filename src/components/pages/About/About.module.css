@@ -1,0 +1,248 @@
+:global(:root) {
+  --bg: #f8fafb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --text: #0f172a;
+  --accent: #2563eb;
+  --accent-800: #1e40af;
+  --glass: rgba(255,255,255,0.6);
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(15,23,42,0.08);
+  --gap: 1.25rem;
+  --max-width: 1100px;
+}
+
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  color: var(--text);
+}
+
+/* Hero / top area */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: var(--gap);
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* Left column (text) */
+.intro {
+  background: linear-gradient(180deg, rgba(37,99,235,0.03), transparent);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.title {
+  font-size: 1.9rem;
+  line-height: 1.05;
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.subtitle {
+  margin: 0 0 1rem 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+/* badges / quick stats under intro */
+.badges {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: var(--card);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 12px rgba(15,23,42,0.04);
+  color: var(--accent-800);
+  font-weight: 600;
+}
+
+/* Right column (profile / image card) */
+.profileCard {
+  background: linear-gradient(180deg, var(--card), var(--glass));
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(15,23,42,0.03);
+}
+
+.avatar {
+  flex: 0 0 96px;
+  height: 96px;
+  border-radius: 14px;
+  overflow: hidden;
+  display: block;
+  background: #eee;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profileInfo {
+  flex: 1 1 auto;
+}
+
+.name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.role {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Main content area (about text + features) */
+.content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--gap);
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(15,23,42,0.03);
+}
+
+.paragraph {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  font-size: 0.98rem;
+}
+
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.featureItem {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.featureIcon {
+  flex: 0 0 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(37,99,235,0.12), rgba(37,99,235,0.04));
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.featureText {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin: 0;
+}
+
+/* CTA area */
+.ctaRow {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .12s ease, box-shadow .12s ease;
+  box-shadow: 0 8px 20px rgba(37,99,235,0.15);
+}
+
+.cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(37,99,235,0.18);
+}
+
+.secondary {
+  background: transparent;
+  color: var(--accent-800);
+  border: 1px solid rgba(37,99,235,0.12);
+  padding: 0.65rem 0.95rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+/* small utility */
+.kicker {
+  font-size: 0.82rem;
+  color: var(--accent-800);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* footer note */
+.note {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin-top: 1.5rem;
+}
+
+/* image full-bleed for sections if needed */
+.heroImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;
+}
+
+/* small screens: tighten padding */
+@media (max-width: 480px) {
+  .container { padding: 1rem; }
+  .title { font-size: 1.5rem; }
+  .avatar { flex-basis: 72px; height:72px; border-radius:10px; }
+}

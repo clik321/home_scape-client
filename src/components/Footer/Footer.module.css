@@ -1,0 +1,42 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+.links {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.links a:hover {
+  color: #1abc9c;
+}
+
+.copy {
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 1rem;
+}

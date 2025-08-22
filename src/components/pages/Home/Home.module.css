@@ -1,0 +1,38 @@
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

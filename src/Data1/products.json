@@ -1,0 +1,74 @@
+[
+  {
+    "id": "123456",
+    "name": "ווילה 1",
+    "price": 350000000,
+    "image": "/images/product1.jpg",
+    "images": [
+      {
+        "id": "img1",
+        "url": "/images/product1-1.jpg",
+        "description": "בריכה פרטית"
+      },
+      {
+        "id": "img2",
+        "url": "/images/product1-2.jpg",
+        "description": "סלון רחב ומואר"
+      },
+      {
+        "id": "img3",
+        "url": "/images/product1-3.jpg",
+        "description": "מטבח מודרני"
+      }
+    ]
+  },
+  {
+    "id": "2654321",
+    "name": "ווילה 2",
+    "price": 699000000,
+    "image": "/images/product2.jpg",
+    "images": [
+      {
+        "id": "img1",
+        "url": "/images/product2-1.jpg",
+        "description": "חדר שינה ראשי"
+      },
+      {
+        "id": "img2",
+        "url": "/images/product2-2.jpg",
+        "description": "מרפסת עם נוף"
+      }
+    ]
+  },
+  {
+    "id": "345678",
+    "name": "ווילה 3",
+    "price": 15000000,
+    "image": "/images/product3.jpg",
+    "images": [
+      {
+        "id": "img1",
+        "url": "/images/product3-1.jpg",
+        "description": "חצר גדולה"
+      },
+      {
+        "id": "img2",
+        "url": "/images/product3-2.jpg",
+        "description": "חדר אמבטיה חדש"
+      }
+    ]
+  },
+  {
+    "id": "4345678",
+    "name": "ווילה 4",
+    "price": 89000000,
+    "image": "/images/product4.jpg",
+    "images": [
+      {
+        "id": "img1",
+        "url": "/images/product4-1.jpg",
+        "description": "גינה מטופחת"
+      }
+    ]
+  }
+]

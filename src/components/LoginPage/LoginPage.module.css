@@ -1,0 +1,71 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px;
+}
+
+.loginBox {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.loginForm input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.loginForm input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+.loginButton {
+  width: 100%;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.loginButton:hover {
+  opacity: 0.9;
+}
+
+.signupText {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signupText a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.signupText a:hover {
+  text-decoration: underline;
+}
